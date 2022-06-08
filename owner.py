@@ -25,7 +25,7 @@ class Owner():
     @classmethod
     def objects(cls):
             my_path = os.path.abspath(os.path.dirname(__file__))
-            path = os.path.join(my_path, "../support/owners.csv")
+            path = os.path.join(my_path, "support/owners.csv")
             with open(path) as csvfile:
                 reader = csv.reader(csvfile)
                 for row in reader:

@@ -1,4 +1,4 @@
-from .owner import Owner
+from owner import Owner
 import os
 import csv
 
@@ -39,7 +39,7 @@ class Account():
     def objects(cls):
             accounts = []
             my_path = os.path.abspath(os.path.dirname(__file__))
-            path = os.path.join(my_path, "../support/accounts.csv")
+            path = os.path.join(my_path, "support/accounts.csv")
             with open(path) as csvfile:
                 reader = csv.reader(csvfile)
                 for row in reader:

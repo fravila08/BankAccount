@@ -1,8 +1,5 @@
-from modules.account import Account
-from modules.bank import Bank
-from modules.owner import Owner
+from account import Account
+from bank import Bank
+from owner import Owner
 
-
-Owner.objects()
-Owner.get_id()
 
